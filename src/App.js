@@ -6,13 +6,13 @@ import About from './containers/about';
 const App = () => (
   <div>
     <header>
-      <Link to="/">Home</Link>
-      <Link to="/about-us">About</Link>
+      <Link to="/app">Home</Link>
+      <Link to="/app/about-us">About</Link>
     </header>
 
     <main>
-      <Route exact path="/" component={Home} />
-      <Route exact path="/about-us" component={About} />
+      <Route exact path="/app" component={Home} />
+      <Route exact path="/app/about-us" component={About} />
     </main>
   </div>
 );
